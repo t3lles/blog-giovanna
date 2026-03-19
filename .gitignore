@@ -1,3 +1,24 @@
-﻿.vs/
+﻿# Pastas de Build e Cache
 bin/
 obj/
+.vs/
+
+# Ferramentas do Visual Studio
+.vs/
+.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet Packages (não suba os pacotes, apenas o arquivo .csproj os restaura)
+*.nupkg
+**/packages/*
+!**/packages/build/
+
+# Configurações sensíveis (IMPORTANTE)
+# Você não quer subir suas senhas de banco de dados do appsettings.json!
+appsettings.Development.json
+UserSecrets/
+
+# Logs
+*.log
